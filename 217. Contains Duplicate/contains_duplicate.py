@@ -26,11 +26,11 @@ def contains_duplicate(nums: List[int]) -> bool:
 
 # * Tests
 # Test 1
-assert not contains_duplicate([1, 2, 3])
+assert not contains_duplicate([1, 2, 3]), "Test 1: Failed"
 print("Test 1: Passed")
 # Test 2
-assert contains_duplicate([1, 1])
+assert contains_duplicate([1, 1]), "Test 2: Failed"
 print("Test 2: Passed")
 # Test 3
-assert not contains_duplicate([1])
+assert not contains_duplicate([1]), "Test 3: Failed"
 print("Test 3: Passed")
