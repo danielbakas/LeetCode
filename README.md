@@ -17,6 +17,6 @@
 ### [637. Average of Levels in Binary Tree](637.%20Average%20of%20Levels%20in%20Binary%20Tree)
 
 * **Difficulty:** Easy
-* **Topics:** Arrays
+* **Topics:** BFS, DFS
 * **Languages:** Python
 * **Implementations:** Iterative (BFS), Recursive (DFS)
