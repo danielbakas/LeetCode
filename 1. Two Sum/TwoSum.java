@@ -1,7 +1,7 @@
 /**
  * –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
  * # 1. Two Sum | LeetCode <p/>
- * Program | `main.js` <p/>
+ * Program | `TwoSum.java` <p/>
  *
  * Daniel Bakas <daniel@semanytk.com> <p/>
  *
@@ -21,7 +21,7 @@
 import java.util.HashMap;
 
 //* Main
-public class Main {
+public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> table = new HashMap<>();
         int[] result = new int[2];

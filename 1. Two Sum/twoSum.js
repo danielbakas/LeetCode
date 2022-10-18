@@ -1,7 +1,7 @@
 /**
  * –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
  * # 1. Two Sum | LeetCode
- * Program | `main.js`
+ * Program | `twoSum.js`
  *
  * Daniel Bakas <daniel@semanytk.com>
  *
@@ -31,11 +31,11 @@ twoSum = (nums, target) => {
 
 //* Tests
 // Test 1
-console.assert(`${twoSum([2, 7, 11, 15], 9)}` === `${[0, 1]}`);
+console.assert(`${ twoSum([2, 7, 11, 15], 9) }` === `${ [0, 1] }`);
 console.log("Test 1: Passed");
 // Test 2
-console.assert(`${twoSum([3, 2, 4], 6)}` === `${[1, 2]}`);
+console.assert(`${ twoSum([3, 2, 4], 6) }` === `${ [1, 2] }`);
 console.log("Test 2: Passed");
 // Test 3
-console.assert(`${twoSum([3, 3], 6)}` === `${[0, 1]}`);
+console.assert(`${ twoSum([3, 3], 6) }` === `${ [0, 1] }`);
 console.log("Test 3: Passed");

@@ -1,7 +1,7 @@
 """
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # 1. Two Sum | LeetCode
-Program | `main.py`
+Program | `two_sum.py`
 
 Daniel Bakas <daniel@semanytk.com>
 
