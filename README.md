@@ -18,5 +18,5 @@
 
 * **Difficulty:** Easy
 * **Topics:** BFS, DFS
-* **Languages:** Python
+* **Languages:** Java, Python
 * **Implementations:** Iterative (BFS), Recursive (DFS)
