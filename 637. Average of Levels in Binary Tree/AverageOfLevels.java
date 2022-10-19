@@ -21,9 +21,9 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 // Main Class
-class AverageOfLevels {
+public class AverageOfLevels {
     // Iterative (BFS)
-    static List<Float> bfs(TreeNode root) {
+    public static List<Float> bfs(TreeNode root) {
         PriorityQueue<TreeNode> nodes = new PriorityQueue<TreeNode>();
         nodes.add(root);
         List<Float> averages = new ArrayList<>();
@@ -45,19 +45,20 @@ class AverageOfLevels {
     }
 
     // Recursive (DFS)
-    static List<Float> dfs(TreeNode root) {
+    public static List<Float> dfs(TreeNode root) {
         List<Integer> sum = new ArrayList<>();
         List<Integer> count = new ArrayList<>();
         int level = 0;
-        dfs_recursive(root, level, sum, count);
+        dfsRecursive(root, level, sum, count);
         List<Float> ans = new ArrayList<>();
         for (int i = 0; i < sum.size(); i++)
             ans.add((float) sum.get(i) / count.get(i));
         return ans;
     }
 
-    static void dfs_recursive(TreeNode node, int level,
-                              List<Integer> sum, List<Integer> count) {
+    private static void dfsRecursive(TreeNode node, int level,
+                                     List<Integer> sum,
+                                     List<Integer> count) {
         if (node == null) return;
         if (sum.size() == level) {
             count.add(0);
@@ -65,8 +66,8 @@ class AverageOfLevels {
         }
         count.set(level, count.get(level) + 1);
         sum.set(level, sum.get(level) + node.val);
-        dfs_recursive(node.left, level + 1, sum, count);
-        dfs_recursive(node.right, level + 1, sum, count);
+        dfsRecursive(node.left, level + 1, sum, count);
+        dfsRecursive(node.right, level + 1, sum, count);
     }
 
     //* Tests
